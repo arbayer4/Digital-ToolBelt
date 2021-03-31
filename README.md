@@ -11,9 +11,7 @@ simple to see if a project is coming in at or under budget. This will help lead 
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+> The MVP of this project is to create a simple and intuitive app for contractors to keep track of their projects on the go. It will utilize a ruby/rails backend to create and store 4 tables to keep track of users, projects, materials, and time. The frontend will be a react architecture that will allow the user to sign in. Once authorized the user can add and edit projects as necessary to keep track of time, costs, and details on the project. 
 
 <br>
 
@@ -23,13 +21,12 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 - _Full crud on both backend and frontend_
 - _Clean well documented code_
 - _Nicely styled and intuitive site_
-- _etc._
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
+
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
@@ -54,7 +51,6 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -83,7 +79,6 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time | 
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -117,7 +112,9 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _A clock in function for project that will keep a running clock until clocked out._
+- _An additional employees table that would essentially just be a user with different permissions so the app would extend to a whole crew rather than just one user_
+- _Direct photo upload for material receipts_
 
 ***
 
