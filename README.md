@@ -100,10 +100,17 @@ src
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
+| Task                | Priority | Estimated Time | Time Invested | Actual Time | 
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Rails Backend Setup |    H     |     3 hrs      |     0 hrs     |    TBD      |
+| Testing Backend     |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Deploying Backend   |    H     |     2 hrs      |     0 hrs     |     TBD     |
+| Miscelaneous Backend Updates/Changes |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
