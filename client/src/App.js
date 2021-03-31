@@ -6,8 +6,10 @@ import {
   registerUser,
   removeToken,
   verifyUser,
-} from "./screens/services/auth";
+} from "./services/auth";
 import LandingPage from "./screens/LandingPage";
+import Login from "./screens/Login";
+import SignUp from "./screens/SignUp";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -43,10 +45,10 @@ function App() {
     <div className="App">
       <Switch>
         <Route path="/login">
-          <h1>Login</h1>
+          <Login handleLogin={handleLogin} />
         </Route>
         <Route path="/sign-up">
-          <h1>SignUp</h1>
+          <SignUp handleRegister={handleRegister} />
         </Route>
         <Route path="/">
           {currentUser ? <h1>Logged In</h1> : <LandingPage />}
