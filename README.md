@@ -36,8 +36,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 |      React       | _The frontend framework to build highly responsive app._ |
 |   React Router   | _The react package to aid in routing between pages in the app._ |
 |     AXIOS        | _The package to control GET/POST/PUT/DELETE from frontend to backend._ |
-|    Styled Components      | _._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+| Styled Components| _Package to write CSS directly in the react component._ |
+|    Bcrypt Gem    | _Password encryption_ |
+|    JWT Gem       |_Token Based Authentication_|
 
 <br>
 
