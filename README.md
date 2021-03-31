@@ -19,10 +19,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
+- _Authorization_
+- _Full crud on both backend and frontend_
+- _Clean well documented code_
+- _Nicely styled and intuitive site_
 - _etc._
 
 <br>
@@ -33,10 +33,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _The frontend framework to build highly responsive app._ |
+|   React Router   | _The react package to aid in routing between pages in the app._ |
+|     AXIOS        | _The package to control GET/POST/PUT/DELETE from frontend to backend._ |
+|    Styled Components      | _._ |
 |  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
 
 <br>
