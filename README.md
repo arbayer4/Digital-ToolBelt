@@ -23,7 +23,9 @@
 
 ## Overview
 
-_**Digital Toolbelt** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Digital Toolbelt** is designed to be another tool in a contractors tool belt to help manage the business.
+The software will help keep track of materials and time for a project, and keep a running total so that it is
+simple to see if a project is coming in at or under budget. This will help lead to more accurate bids in the future and a lead to a more profitable business. _
 
 
 <br>
