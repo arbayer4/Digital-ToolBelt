@@ -104,12 +104,13 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Rails Backend Setup |    H     |     3 hrs      |     0 hrs     |    TBD      |
 | Testing Backend     |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Deploying Backend   |    H     |     2 hrs      |     0 hrs     |     TBD     |
+| Deploying Backend   |    H     |     1 hrs      |     0 hrs     |     TBD     |
 | Miscelaneous Backend Updates/Changes |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
+| Frontend CRUD Routes |    H     |     2 hrs      |     0 hrs     |     TBD     |
+| Landing Page         |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Sign Up/Sign In      |    H     |     2 hrs      |     0 hrs     |     TBD     |
+| Project Component    |    H     |     3 hrs      |     0 hrs     |     TBD     |
+|  |    H     |     3 hrs      |     0 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     3 hrs      |     0 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
