@@ -1,31 +1,10 @@
 # Digital-ToolBelt
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
-- [Overview](#overview)
-- [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
-- [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
-
-<br>
-
 ## Overview
 
 _**Digital Toolbelt** is designed to be another tool in a contractors tool belt to help manage the business.
 The software will help keep track of materials and time for a project, and keep a running total so that it is
-simple to see if a project is coming in at or under budget. This will help lead to more accurate bids in the future and a lead to a more profitable business. _
+simple to see if a project is coming in at or under budget. This will help lead to more accurate bids in the future and a lead to a more profitable business._
 
 
 <br>
