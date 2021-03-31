@@ -18,6 +18,6 @@ User.destroy_all
 puts "#{User.count} users created"
 
 3.times do 
-  Project.create!(project_name: Faker::FunnyName.four_word_name, client_name: Faker::FunnyName.name, client_phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.street_address, description: Faker::Lorem.paragraph(sentence_count: 2), bid: Faker::Number.number(digits: 4), user: @admin )
+  Project.create!(project_name: Faker::Construction.subcontract_category, client_name: Faker::FunnyName.name, client_phone: Faker::PhoneNumber.cell_phone, address: Faker::Address.street_address, description: Faker::Lorem.paragraph(sentence_count: 2), bid: Faker::Number.number(digits: 4), user: @admin )
 end
 
