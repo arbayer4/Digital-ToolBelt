@@ -1,4 +1,5 @@
 class MaterialsController < ApplicationController
+  before_action :authorize_request, only: [ :create, :update, :destroy ]
   before_action :set_material, only: [:show, :update, :destroy]
 
   # GET /materials

@@ -10,6 +10,7 @@ import {
 import LandingPage from "./screens/LandingPage";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
+import ProjectsContainer from "./containers/ProjectsContainer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -51,7 +52,14 @@ function App() {
           <SignUp handleRegister={handleRegister} />
         </Route>
         <Route path="/">
-          {currentUser ? <h1>Logged In</h1> : <LandingPage />}
+          {currentUser ? (
+            <ProjectsContainer
+              handleLogout={handleLogout}
+              currentUser={currentUser}
+            />
+          ) : (
+            <LandingPage />
+          )}
         </Route>
       </Switch>
     </div>
