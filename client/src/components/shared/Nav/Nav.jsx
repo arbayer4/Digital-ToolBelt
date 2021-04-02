@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
 import "./Nav.css";
 function Nav(props) {
   const { user, handleLogout } = props;
   return (
-    <div>
-      <button onClick={handleLogout}>Logout</button>
-    </div>
+    <nav className="nav-container">
+      <Link to="/" className="nav-title">
+        Digital Toolbelt
+      </Link>
+      <Link onClick={handleLogout}>Logout</Link>
+    </nav>
   );
 }
 

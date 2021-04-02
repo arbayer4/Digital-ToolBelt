@@ -7,7 +7,7 @@ import {
   removeToken,
   verifyUser,
 } from "./services/auth";
-import LandingPage from "./screens/LandingPage";
+import LandingPage from "./screens/LandingPage/LandingPage";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
 import ProjectsContainer from "./containers/ProjectsContainer";
