@@ -1,0 +1,104 @@
+.budget-time {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.timesheet {
+  width: 30vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: coral;
+}
+.time-table {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.table-columns {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.time-row,
+.time-total,
+.add-hours {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  justify-content: space-between;
+}
+/* .time-total {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  justify-content: space-between;
+} */
+
+.date,
+.total {
+  border-right: 1px solid black;
+  width: 10vw;
+}
+.hours,
+.hours-total {
+  width: 5vw;
+}
+.total,
+.hours-total {
+  font-weight: bold;
+}
+input.hours {
+  text-align: center;
+}
+.budget-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 30vw;
+  height: 200px;
+  font-size: 25px;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+.boxline {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.materials-table .materials-table {
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.material-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.material-box {
+  width: 20vw;
+}
+.delete-icon {
+  width: 30px;
+  height: 30px;
+}

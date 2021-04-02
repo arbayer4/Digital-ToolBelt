@@ -1,13 +1,23 @@
 import { useEffect, useState } from "react";
 import { Route, Switch } from "react-router";
 import Layout from "../components/shared/Layout/Layout";
-import { getAllHours } from "../services/hours";
-import { getAllMaterials } from "../services/materials";
+import ProjectDetails from "../screens/ProjectDetails/ProjectDetails";
+import Projects from "../screens/Projects/Projects";
+import { getAllHours, postHours } from "../services/hours";
+import {
+  destroyMaterial,
+  getAllMaterials,
+  postMaterial,
+} from "../services/materials";
 import { getAllProjects } from "../services/projects";
 
 function ProjectsContainer(props) {
-  const [projects, setProjects] = useState();
+  const [projects, setProjects] = useState([]);
+  const [materials, setMaterials] = useState([]);
+  const [hours, setHours] = useState([]);
   const { currentUser, handleLogout } = props;
+
+  //Getting User Projects from API
   useEffect(() => {
     const fetchProjects = async () => {
       const projectData = await getAllProjects();
@@ -17,27 +27,55 @@ function ProjectsContainer(props) {
       setProjects(userProjectData);
     };
     fetchProjects();
-  }, []);
+  }, [currentUser.id]);
+
+  //Material List from API
   useEffect(() => {
     const fetchMaterials = async () => {
       const materialData = await getAllMaterials();
-      console.log(materialData);
+      setMaterials(materialData);
     };
     fetchMaterials();
   }, []);
+
+  //Hours List from API
   useEffect(() => {
     const fetchHours = async () => {
       const hourData = await getAllHours();
-      console.log(hourData);
+      setHours(hourData);
     };
     fetchHours();
   }, []);
+  const handleTimeCreate = async (timeData) => {
+    const newTime = await postHours(timeData);
+    setHours((prevState) => [...prevState, newTime]);
+  };
+  const handleMaterialCreate = async (materialData) => {
+    const newMaterial = await postMaterial(materialData);
+    setMaterials((prevState) => [...prevState, newMaterial]);
+  };
+  const handleMaterialDelete = async (id) => {
+    await destroyMaterial(id);
+    setMaterials((prevState) =>
+      prevState.filter((material) => material.id !== id)
+    );
+  };
 
   return (
     <Layout user={currentUser} handleLogout={handleLogout}>
       <Switch>
-        <Route path="/">
-          <h1>This will Be projects</h1>
+        <Route exact path="/">
+          <Projects projects={projects} materials={materials} hours={hours} />
+        </Route>
+        <Route path="/projects/:id">
+          <ProjectDetails
+            projects={projects}
+            materials={materials}
+            hours={hours}
+            handleTimeCreate={handleTimeCreate}
+            handleMaterialCreate={handleMaterialCreate}
+            handleMaterialDelete={handleMaterialDelete}
+          />
         </Route>
       </Switch>
     </Layout>
