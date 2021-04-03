@@ -8,10 +8,11 @@ import {
   verifyUser,
 } from "./services/auth";
 import LandingPage from "./screens/LandingPage/LandingPage";
-import Login from "./screens/Login";
+import Login from "./screens/Login/Login";
 import SignUp from "./screens/SignUp";
 import ProjectsContainer from "./containers/ProjectsContainer";
 import Spinner from "./utils/spinner";
+import Layout from "./components/shared/Layout/Layout";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -55,24 +56,26 @@ function App() {
       {loading ? (
         <Spinner />
       ) : (
-        <Switch>
-          <Route path="/login">
-            <Login handleLogin={handleLogin} />
-          </Route>
-          <Route path="/sign-up">
-            <SignUp handleRegister={handleRegister} />
-          </Route>
-          <Route path="/">
-            {currentUser ? (
-              <ProjectsContainer
-                handleLogout={handleLogout}
-                currentUser={currentUser}
-              />
-            ) : (
-              <LandingPage />
-            )}
-          </Route>
-        </Switch>
+        <Layout>
+          <Switch>
+            <Route path="/login">
+              <Login handleLogin={handleLogin} />
+            </Route>
+            <Route path="/sign-up">
+              <SignUp handleRegister={handleRegister} />
+            </Route>
+            <Route path="/">
+              {currentUser ? (
+                <ProjectsContainer
+                  handleLogout={handleLogout}
+                  currentUser={currentUser}
+                />
+              ) : (
+                <LandingPage />
+              )}
+            </Route>
+          </Switch>
+        </Layout>
       )}
     </div>
   );
