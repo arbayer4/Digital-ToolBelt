@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 import "./ProjectDetails.css";
 
 function ProjectDetails(props) {
@@ -22,8 +23,10 @@ function ProjectDetails(props) {
   const {
     projects,
     handleTimeCreate,
+    handleTimeDelete,
     handleMaterialCreate,
     handleMaterialDelete,
+    handleProjectDelete,
   } = props;
   const params = useParams();
 
@@ -86,28 +89,42 @@ function ProjectDetails(props) {
       {loading ? (
         <div>loading</div>
       ) : (
-        <div>
-          <h1>{project.project_name}</h1>
+        <div className="details-container">
           <div className="owner-details">
+            <h1>{project.project_name}</h1>
             <div>{project.address}</div>
-            <div className="owner">
-              <div>Client: {project.client_name}</div>
-              <div>Phone: {project.client_phone}</div>
-            </div>
+            <div>Client: {project.client_name}</div>
+            <div>Phone: {project.client_phone}</div>
             <div className="description">{project.description}</div>
+            <div className="details-buttons">
+              <button onClick={() => handleProjectDelete(project.id)}>
+                Delete Project
+              </button>
+              <Link to={`/projects/${project.id}/edit`}>
+                <button>Edit Project</button>
+              </Link>
+            </div>
           </div>
           <div className="budget-time">
             <div className="timesheet">
               <h3>TimeSheet</h3>
               <div className="time-table">
                 <div className="table-columns">
-                  <div className="date">Date</div>
-                  <div className="hours">Hours</div>
+                  <div className="column-date">Date</div>
+                  <div className="column-hours">Hours</div>
                 </div>
                 {hours.map((hour, index) => (
                   <div className="time-row" key={index}>
                     <div className="date">{hour.date}</div>
                     <div className="hours">{hour.hours}</div>
+                    <img
+                      className="delete-time"
+                      onClick={() => {
+                        handleTimeDelete(hour.id);
+                      }}
+                      src="https://i.imgur.com/HvfL3H2.png"
+                      alt={hour.date}
+                    />
                   </div>
                 ))}
                 <div className="time-total">
@@ -121,6 +138,7 @@ function ProjectDetails(props) {
                 </div>
               </div>
               <form
+                className="add-time-form"
                 onSubmit={(e) => {
                   e.preventDefault();
                   handleTimeCreate(timeFormData);
@@ -133,14 +151,14 @@ function ProjectDetails(props) {
               >
                 <div className="add-hours">
                   <input
-                    className="date"
+                    className="date-input"
                     type="date"
                     name="date"
                     value={timeFormData.date}
                     onChange={handleTimeChange}
                   />
                   <input
-                    className="hours"
+                    className="hours-input"
                     placeholder="# Hours"
                     type="number"
                     name="hours"
@@ -172,7 +190,7 @@ function ProjectDetails(props) {
           <div className="materials-table-container">
             <h3>Materials</h3>
             <div className="materials-table">
-              <div className="material-row">
+              <div className="material-columns">
                 <div className="material-box">Name</div>
                 <div className="material-box">Price</div>
                 <div className="material-box">Quantity</div>
@@ -194,6 +212,7 @@ function ProjectDetails(props) {
                       handleMaterialDelete(material.id);
                     }}
                     src="https://i.imgur.com/HvfL3H2.png"
+                    alt={material.name}
                   />
                 </div>
               ))}

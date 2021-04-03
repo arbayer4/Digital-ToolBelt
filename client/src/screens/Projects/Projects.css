@@ -1,4 +1,20 @@
 .projects-container {
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects-container > a {
+  text-decoration: none;
+}
+.add-project-button {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 50px;
+  width: 90px;
+  height: 90px;
+  font-weight: bolder;
+  color: #ffff;
+  background-color: #00a8e8;
+  border-radius: 50%;
 }

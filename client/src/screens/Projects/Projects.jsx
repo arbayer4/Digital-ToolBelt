@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Projects.css";
 
@@ -20,6 +21,9 @@ function Projects(props) {
     <div className="projects-container">
       <h1>My Projects</h1>
       {projectsJSX}
+      <Link to="/add-project">
+        <div className="add-project-button">+</div>
+      </Link>
     </div>
   );
 }

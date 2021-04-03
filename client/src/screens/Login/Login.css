@@ -1,0 +1,15 @@
+.sign-in-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.sign-in-form > input {
+  border-radius: 3px;
+  outline: none;
+  border: 3px solid #00a8e8;
+  /* width: 30vw; */
+}
+
+.sign-in-form > label {
+  color: white;
+}
