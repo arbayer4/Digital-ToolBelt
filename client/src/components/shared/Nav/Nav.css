@@ -34,3 +34,20 @@
   color: white;
   padding: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .nav-title {
+    font-size: 40px;
+  }
+  .right-links {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    font-size: 22px;
+  }
+  .right-links {
+    font-size: 15px;
+  }
+}
