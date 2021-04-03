@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Route, Switch, useHistory } from "react-router";
-import Layout from "../components/shared/Layout/Layout";
 import AddProject from "../screens/AddProject/AddProject";
 import EditProject from "../screens/EditProject/EditProject";
 import ProjectDetails from "../screens/ProjectDetails/ProjectDetails";
@@ -22,7 +21,7 @@ function ProjectsContainer(props) {
   const [projects, setProjects] = useState([]);
   const [materials, setMaterials] = useState([]);
   const [hours, setHours] = useState([]);
-  const { currentUser, handleLogout } = props;
+  const { currentUser } = props;
   const history = useHistory();
 
   //Getting User Projects from API
