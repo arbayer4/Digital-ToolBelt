@@ -23,12 +23,12 @@
 .nav-title:hover {
   opacity: 0.9;
 }
-.nav-logout {
+.right-links {
   text-decoration: none;
   color: #003459;
   font-size: 25px;
 }
-.nav-logout:hover {
+.right-links:hover {
   background-color: #003459;
   border-radius: 5px;
   color: white;

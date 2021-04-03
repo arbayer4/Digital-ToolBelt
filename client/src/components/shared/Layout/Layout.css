@@ -3,4 +3,6 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
+  width: 100vw;
+  box-sizing: border-box;
 }

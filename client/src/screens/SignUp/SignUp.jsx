@@ -19,7 +19,6 @@ function SignUp(props) {
 
   return (
     <div className="signup-container">
-      <Link to="/login">Login</Link>
       <form
         onSubmit={(e) => {
           e.preventDefault();

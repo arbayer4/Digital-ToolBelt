@@ -97,37 +97,35 @@ function ProjectsContainer(props) {
   };
 
   return (
-    <Layout user={currentUser} handleLogout={handleLogout}>
-      <Switch>
-        <Route exact path="/">
-          <Projects projects={projects} materials={materials} hours={hours} />
-        </Route>
-        <Route exact path="/projects/:id">
-          <ProjectDetails
-            projects={projects}
-            materials={materials}
-            hours={hours}
-            handleTimeCreate={handleTimeCreate}
-            handleTimeDelete={handleTimeDelete}
-            handleMaterialCreate={handleMaterialCreate}
-            handleMaterialDelete={handleMaterialDelete}
-            handleProjectDelete={handleProjectDelete}
-          />
-        </Route>
-        <Route path="/add-project">
-          <AddProject
-            currentUser={currentUser}
-            handleProjectCreate={handleProjectCreate}
-          />
-        </Route>
-        <Route path="/projects/:id/edit">
-          <EditProject
-            projects={projects}
-            handleProjectUpdate={handleProjectUpdate}
-          />
-        </Route>
-      </Switch>
-    </Layout>
+    <Switch>
+      <Route exact path="/">
+        <Projects projects={projects} materials={materials} hours={hours} />
+      </Route>
+      <Route exact path="/projects/:id">
+        <ProjectDetails
+          projects={projects}
+          materials={materials}
+          hours={hours}
+          handleTimeCreate={handleTimeCreate}
+          handleTimeDelete={handleTimeDelete}
+          handleMaterialCreate={handleMaterialCreate}
+          handleMaterialDelete={handleMaterialDelete}
+          handleProjectDelete={handleProjectDelete}
+        />
+      </Route>
+      <Route path="/add-project">
+        <AddProject
+          currentUser={currentUser}
+          handleProjectCreate={handleProjectCreate}
+        />
+      </Route>
+      <Route path="/projects/:id/edit">
+        <EditProject
+          projects={projects}
+          handleProjectUpdate={handleProjectUpdate}
+        />
+      </Route>
+    </Switch>
   );
 }
 

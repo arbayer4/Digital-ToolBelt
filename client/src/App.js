@@ -9,7 +9,7 @@ import {
 } from "./services/auth";
 import LandingPage from "./screens/LandingPage/LandingPage";
 import Login from "./screens/Login/Login";
-import SignUp from "./screens/SignUp";
+import SignUp from "./screens/SignUp/SignUp";
 import ProjectsContainer from "./containers/ProjectsContainer";
 import Spinner from "./utils/spinner";
 import Layout from "./components/shared/Layout/Layout";
@@ -56,7 +56,7 @@ function App() {
       {loading ? (
         <Spinner />
       ) : (
-        <Layout>
+        <Layout user={currentUser} handleLogout={handleLogout}>
           <Switch>
             <Route path="/login">
               <Login handleLogin={handleLogin} />
