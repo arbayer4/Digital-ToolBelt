@@ -19,8 +19,20 @@ function ProjectCard(props) {
     <>
       <Link to={`/projects/${project.id}`} className="project-container">
         <h3>{project.project_name}</h3>
-        <h3>Budget: {project.bid - materialTotal}</h3>
-        <h3>Hours: {hourTotal}</h3>
+        <div className="right">
+          <div className="sub-right">
+            <div>Budget</div>
+            <div
+              className={project.bid - materialTotal > 0 ? "bold " : "bold red"}
+            >
+              {project.bid - materialTotal}
+            </div>
+          </div>
+          <div className="sub-right">
+            <div>Total Hours</div>
+            <div className="bold">{hourTotal}</div>
+          </div>
+        </div>
       </Link>
     </>
   );

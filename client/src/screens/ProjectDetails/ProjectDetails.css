@@ -1,7 +1,32 @@
+.details-container {
+  background-color: #007ea7;
+  box-sizing: border-box;
+  width: 90vw;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 20px;
+}
+.owner-details {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  color: #e9ecef;
+}
+.owner-details > div {
+  margin: 5px;
+}
+.details-buttons > button {
+  margin: 20px;
+}
 .budget-time {
+  box-sizing: border-box;
+
+  margin: 40px 20px 20px 20px;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .timesheet {
@@ -10,7 +35,9 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: space-around;
-  background-color: coral;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
 }
 .time-table {
   display: flex;
@@ -19,17 +46,41 @@
 .table-columns {
   display: flex;
   flex-flow: row nowrap;
-  width: 15vw;
+  font-weight: bold;
+  width: 17vw;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
+.column-date {
+  width: 10vw;
+  border-right: 1px solid black;
+  padding-bottom: 5px;
+}
+.column-hours {
+  width: 7vw;
+  padding-bottom: 5px;
+}
+
 .time-row,
-.time-total,
+.time-total {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 17vw;
+  justify-content: space-between;
+}
 .add-hours {
   display: flex;
   flex-flow: row nowrap;
-  width: 15vw;
+  width: 17vw;
   justify-content: space-between;
+}
+.date-input {
+  width: 10vw;
+  margin-bottom: 5px;
+}
+.hours-input {
+  width: 5vw;
+  margin-bottom: 5px;
 }
 /* .time-total {
   display: flex;
@@ -37,22 +88,46 @@
   width: 15vw;
   justify-content: space-between;
 } */
-
+.add-time-form {
+  box-sizing: border-box;
+  padding: 20px;
+}
 .date,
 .total {
   border-right: 1px solid black;
   width: 10vw;
 }
-.hours,
-.hours-total {
+.date,
+.hours {
+  padding: 7px 0px;
+}
+.hours {
   width: 5vw;
+}
+.hours-total {
+  width: 7vw;
 }
 .total,
 .hours-total {
   font-weight: bold;
+  padding-top: 7px;
+  text-align: center;
+}
+.time-total {
+  box-sizing: border-box;
+  border-top: 1px solid black;
 }
 input.hours {
   text-align: center;
+}
+img.delete-time {
+  width: 2vw;
+  height: 2vw;
+  margining-top: 5px;
+  transition: transform 250ms;
+}
+img.delete-time:hover {
+  transform: translateX(3px);
 }
 .budget-container {
   display: flex;
@@ -62,6 +137,9 @@ input.hours {
   width: 30vw;
   height: 200px;
   font-size: 25px;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
 }
 .green {
   color: green;
@@ -85,18 +163,36 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+.materials-table-container {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
+}
 .materials-table .materials-table {
   width: 80vw;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
+.material-columns {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid black;
+}
 .material-row {
   display: flex;
   flex-flow: row nowrap;
 }
 .material-box {
-  width: 20vw;
+  width: 18vw;
+  border-right: 1px solid black;
 }
 .delete-icon {
   width: 30px;

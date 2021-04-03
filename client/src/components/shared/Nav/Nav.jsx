@@ -5,9 +5,11 @@ function Nav(props) {
   return (
     <nav className="nav-container">
       <Link to="/" className="nav-title">
-        Digital Toolbelt
+        DIGITAL TOOLBELT
       </Link>
-      <Link onClick={handleLogout}>Logout</Link>
+      <Link className="nav-logout" onClick={handleLogout}>
+        Logout
+      </Link>
     </nav>
   );
 }

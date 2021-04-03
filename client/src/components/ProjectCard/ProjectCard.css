@@ -1,6 +1,32 @@
 .project-container {
+  box-sizing: border-box;
+  width: 80vw;
+  height: 12vw;
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   border: 1px solid black;
   margin: 10px;
+  text-decoration: none;
+  background-color: #007ea7;
+  color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.right {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.sub-right {
+  box-sizing: border-box;
+  margin: 15px;
+}
+.sub-right > div {
+  margin: 10px;
+  font-size: 20px;
+}
+div.bold {
+  font-weight: bold;
 }

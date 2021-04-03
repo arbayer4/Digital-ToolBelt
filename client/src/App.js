@@ -11,9 +11,11 @@ import LandingPage from "./screens/LandingPage/LandingPage";
 import Login from "./screens/Login";
 import SignUp from "./screens/SignUp";
 import ProjectsContainer from "./containers/ProjectsContainer";
+import Spinner from "./utils/spinner";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
@@ -23,6 +25,12 @@ function App() {
     };
     handleVerify();
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  });
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -44,24 +52,28 @@ function App() {
 
   return (
     <div className="App">
-      <Switch>
-        <Route path="/login">
-          <Login handleLogin={handleLogin} />
-        </Route>
-        <Route path="/sign-up">
-          <SignUp handleRegister={handleRegister} />
-        </Route>
-        <Route path="/">
-          {currentUser ? (
-            <ProjectsContainer
-              handleLogout={handleLogout}
-              currentUser={currentUser}
-            />
-          ) : (
-            <LandingPage />
-          )}
-        </Route>
-      </Switch>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <Switch>
+          <Route path="/login">
+            <Login handleLogin={handleLogin} />
+          </Route>
+          <Route path="/sign-up">
+            <SignUp handleRegister={handleRegister} />
+          </Route>
+          <Route path="/">
+            {currentUser ? (
+              <ProjectsContainer
+                handleLogout={handleLogout}
+                currentUser={currentUser}
+              />
+            ) : (
+              <LandingPage />
+            )}
+          </Route>
+        </Switch>
+      )}
     </div>
   );
 }
