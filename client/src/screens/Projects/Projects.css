@@ -7,6 +7,9 @@
 .projects-container > a {
   text-decoration: none;
 }
+.projects-container > h1 {
+  color: #54392e;
+}
 .add-project-button {
   box-sizing: border-box;
   text-decoration: none;
