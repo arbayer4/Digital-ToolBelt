@@ -19,7 +19,6 @@ function Login(props) {
   };
   return (
     <div>
-      <Link to="sign-up">SignUp</Link>
       <form
         className="sign-in-form"
         onSubmit={(e) => {
@@ -32,6 +31,7 @@ function Login(props) {
           id="sign-in-username"
           type="text"
           name="username"
+          placeholder="Username"
           value={username}
           onChange={handleChange}
         />
@@ -40,10 +40,13 @@ function Login(props) {
           id="sign-in-password"
           type="password"
           name="password"
+          placeholder="password"
           value={password}
           onChange={handleChange}
         />
         <button type="submit">Login</button>
+        <div>No account?</div>
+        <Link to="sign-up">SignUp</Link>
       </form>
     </div>
   );

@@ -3,7 +3,7 @@
   box-sizing: border-box;
   flex-flow: row nowrap;
   height: 90px;
-  border-bottom: 5px solid #00a8e8;
+  /* border-bottom: 5px solid #00a8e8; */
   margin: 10px;
 
   align-items: center;
@@ -17,8 +17,8 @@
 .nav-title {
   text-decoration: none;
   font-size: 50px;
-  color: #003459;
-  font-family: "Permanent Marker", cursive;
+  color: rgb(150, 112, 73);
+  font-family: "Shadows Into Light", cursive;
 }
 .nav-title:hover {
   opacity: 0.9;
@@ -33,4 +33,21 @@
   border-radius: 5px;
   color: white;
   padding: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .nav-title {
+    font-size: 40px;
+  }
+  .right-links {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    font-size: 22px;
+  }
+  .right-links {
+    font-size: 15px;
+  }
 }

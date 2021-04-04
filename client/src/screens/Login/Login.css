@@ -1,6 +1,8 @@
 .sign-in-form {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .sign-in-form > input {
@@ -12,4 +14,9 @@
 
 .sign-in-form > label {
   color: white;
+}
+
+.sign-in-form > button {
+  margin: 10px;
+  width: 50px;
 }

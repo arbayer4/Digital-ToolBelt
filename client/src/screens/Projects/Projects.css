@@ -10,11 +10,12 @@
 .add-project-button {
   box-sizing: border-box;
   text-decoration: none;
-  font-size: 50px;
+  font-size: 60px;
   width: 90px;
   height: 90px;
   font-weight: bolder;
-  color: #ffff;
-  background-color: #00a8e8;
+  color: #54392e;
+  background-color: rgb(244, 187, 68);
   border-radius: 50%;
+  margin-top: 20px;
 }

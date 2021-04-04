@@ -9,6 +9,12 @@
   color: white;
   font-size: 10px;
 }
+.signup-container > input {
+  border-radius: 3px;
+  outline: none;
+  border: 3px solid #00a8e8;
+  /* width: 30vw; */
+}
 .signup-container > button {
   margin: 10px;
 }
