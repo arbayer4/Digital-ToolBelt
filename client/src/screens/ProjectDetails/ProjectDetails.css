@@ -47,17 +47,17 @@
   display: flex;
   flex-flow: row nowrap;
   font-weight: bold;
-  width: 17vw;
+  width: 20vw;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
 .column-date {
-  width: 10vw;
+  width: 12vw;
   border-right: 1px solid black;
   padding-bottom: 5px;
 }
 .column-hours {
-  width: 7vw;
+  width: 12vw;
   padding-bottom: 5px;
 }
 
@@ -65,13 +65,13 @@
 .time-total {
   display: flex;
   flex-flow: row nowrap;
-  width: 17vw;
+  width: 20vw;
   justify-content: space-between;
 }
 .add-hours {
   display: flex;
   flex-flow: row nowrap;
-  width: 17vw;
+  width: 20vw;
   justify-content: space-between;
 }
 .date-input {
@@ -79,7 +79,7 @@
   margin-bottom: 5px;
 }
 .hours-input {
-  width: 5vw;
+  width: 7vw;
   margin-bottom: 5px;
 }
 /* .time-total {
@@ -95,7 +95,7 @@
 .date,
 .total {
   border-right: 1px solid black;
-  width: 10vw;
+  width: 12vw;
 }
 .date,
 .hours {
@@ -105,7 +105,7 @@
   width: 5vw;
 }
 .hours-total {
-  width: 7vw;
+  width: 10vw;
 }
 .total,
 .hours-total {
