@@ -47,17 +47,25 @@
   display: flex;
   flex-flow: row nowrap;
   font-weight: bold;
-  width: 20vw;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
+.table-columns,
+.time-row,
+.time-total {
+  width: 22vw;
+}
+.column-date,
+.date,
+.total {
+  width: 14vw;
+}
 .column-date {
-  width: 12vw;
   border-right: 1px solid black;
   padding-bottom: 5px;
 }
 .column-hours {
-  width: 12vw;
+  width: 8vw;
   padding-bottom: 5px;
 }
 
@@ -65,7 +73,6 @@
 .time-total {
   display: flex;
   flex-flow: row nowrap;
-  width: 20vw;
   justify-content: space-between;
 }
 .add-hours {
@@ -95,17 +102,16 @@
 .date,
 .total {
   border-right: 1px solid black;
-  width: 12vw;
 }
 .date,
 .hours {
   padding: 7px 0px;
 }
 .hours {
-  width: 5vw;
+  width: 6vw;
 }
 .hours-total {
-  width: 10vw;
+  width: 8vw;
 }
 .total,
 .hours-total {
@@ -220,7 +226,15 @@ input[type="number"] {
   .total {
     width: 20vw;
   }
-  .hours-total {
+  .hours-total,
+  .column-hours {
     width: 20vw;
+  }
+  .hours {
+    width: 15vw;
+  }
+  img.delete-time {
+    width: 5vw;
+    height: auto;
   }
 }
