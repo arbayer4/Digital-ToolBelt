@@ -21,7 +21,7 @@
   font-family: "Shadows Into Light", cursive;
 }
 .nav-title:hover {
-  opacity: 0.9;
+  color: #54392e;
 }
 .right-links {
   text-decoration: none;
@@ -30,9 +30,7 @@
   padding: 5px;
 }
 .right-links:hover {
-  background-color: #54392e;
-  border-radius: 5px;
-  color: rgb(244, 187, 68);
+  color: rgb(150, 112, 73);
 }
 @media only screen and (max-width: 768px) {
   .nav-title {

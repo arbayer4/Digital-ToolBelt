@@ -13,15 +13,16 @@ const Spinner = styled.div`
   animation: ${rotate360} 1s linear infinite;
   transform: translateZ(0);
 
-  border-top: 2px solid #003049;
-  border-right: 2px solid #003049;
-  border-bottom: 2px solid #003049;
-  border-left: 4px solid #ffb81f;
+  border-top: 3px solid #54392e;
+  border-right: 3px solid #54392e;
+  border-bottom: 3px solid #54392e;
+  border-left: 3px solid rgb(244, 187, 68);
   background: transparent;
-  width: 24px;
-  height: 24px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   margin: 10px;
+  margin-top: 50px;
 `;
 
 export default Spinner;
