@@ -8,7 +8,7 @@ function SignUp(props) {
     password: "",
   });
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  const [message, setMessage] = useState("");
+  // const [message, setMessage] = useState("");
   const { username, email, password } = formData;
   const { handleRegister, createUserError } = props;
 
