@@ -8,6 +8,7 @@ function SignUp(props) {
     password: "",
   });
   const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [error, setError] = useState("");
   const { username, email, password } = formData;
   const { handleRegister } = props;
 
@@ -25,7 +26,7 @@ function SignUp(props) {
         className="signup-container"
         onSubmit={(e) => {
           e.preventDefault();
-          handleRegister(formData);
+          setError(handleRegister(formData));
         }}
       >
         <h3>Register</h3>
@@ -68,9 +69,11 @@ function SignUp(props) {
           required
         />
         {/* <p></p>x */}
+        {/* {error ? <p>UserExists</p> : null} */}
+        <div>{error}</div>
         <button
           type="submit"
-          disabled={passwordConfirm !== password || password.length == +0}
+          disabled={passwordConfirm !== password || password.length === 0}
         >
           SignUp
         </button>

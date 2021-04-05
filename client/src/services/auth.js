@@ -16,6 +16,7 @@ export const registerUser = async (registerData) => {
     return resp.data.user;
   } catch (error) {
     return error.response.data;
+    // console.log(typerror.response.data);
   }
 };
 

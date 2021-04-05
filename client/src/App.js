@@ -42,9 +42,13 @@ function App() {
 
   const handleRegister = async (formData) => {
     const userData = await registerUser(formData);
-    console.log(userData);
-    setCurrentUser(userData);
-    history.push("/");
+    if (!userData.username) {
+      console.log(typeof userData);
+    } else {
+      setCurrentUser(userData);
+      history.push("/");
+      return false;
+    }
   };
 
   const handleLogout = () => {
