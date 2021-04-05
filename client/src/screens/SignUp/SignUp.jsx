@@ -26,7 +26,10 @@ function SignUp(props) {
         className="signup-container"
         onSubmit={(e) => {
           e.preventDefault();
-          setMessage(handleRegister(formData));
+          const prom = handleRegister(formData);
+          prom.then((value) => {
+            setMessage(value);
+          });
         }}
       >
         <h3>Register</h3>
@@ -68,8 +71,6 @@ function SignUp(props) {
           onChange={(e) => setPasswordConfirm(e.target.value)}
           required
         />
-        {/* <p></p>x */}
-        {/* {error ? <p>UserExists</p> : null} */}
         <div>{message}</div>
         <button
           type="submit"

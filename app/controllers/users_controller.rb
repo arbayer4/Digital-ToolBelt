@@ -3,8 +3,6 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(user_params)
-    puts @user.valid?
-    puts @user.errors.objects.first.full_message
 
     if @user.save
       @token = encode({id:@user.id})
