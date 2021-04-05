@@ -218,6 +218,7 @@ function ProjectDetails(props) {
               ))}
             </div>
             <form
+              className="add-material-form"
               onSubmit={(e) => {
                 e.preventDefault();
                 handleMaterialCreate(materialFormData);
@@ -229,27 +230,29 @@ function ProjectDetails(props) {
                 }));
               }}
             >
-              <input
-                type="text"
-                placeholder="name"
-                name="name"
-                value={materialFormData.name}
-                onChange={handleMaterialChange}
-              />
-              <input
-                type="number"
-                placeholder="price"
-                name="price"
-                value={materialFormData.price}
-                onChange={handleMaterialChange}
-              />
-              <input
-                type="number"
-                placeholder="quantity"
-                name="quantity"
-                value={materialFormData.quantity}
-                onChange={handleMaterialChange}
-              />
+              <div className="materials-inputs">
+                <input
+                  type="text"
+                  placeholder="name"
+                  name="name"
+                  value={materialFormData.name}
+                  onChange={handleMaterialChange}
+                />
+                <input
+                  type="number"
+                  placeholder="price"
+                  name="price"
+                  value={materialFormData.price}
+                  onChange={handleMaterialChange}
+                />
+                <input
+                  type="number"
+                  placeholder="quantity"
+                  name="quantity"
+                  value={materialFormData.quantity}
+                  onChange={handleMaterialChange}
+                />
+              </div>
               <button type="submit">Add Material Cost</button>
             </form>
           </div>

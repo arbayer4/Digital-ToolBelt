@@ -209,6 +209,10 @@ input[type="number"] {
 .delete-icon:hover {
   transform: translateX(3px);
 }
+.add-material-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 @media only screen and (max-width: 768px) {
   .budget-time {
