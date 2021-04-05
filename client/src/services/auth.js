@@ -15,7 +15,16 @@ export const registerUser = async (registerData) => {
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
     return resp.data.user;
   } catch (error) {
-    return error.response.data;
+    if (error.response.data === "Username has already been taken") {
+      return "Username has already been taken";
+    } else if (error.response.data === "Email has already been taken") {
+      return "Email has already been taken";
+    } else {
+      return "Error, try again later";
+    }
+
+    // Email has already been taken
+    // return problem;
     // console.log(typerror.response.data);
   }
 };

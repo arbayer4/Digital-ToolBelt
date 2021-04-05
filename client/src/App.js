@@ -43,7 +43,7 @@ function App() {
   const handleRegister = async (formData) => {
     const userData = await registerUser(formData);
     if (!userData.username) {
-      console.log(typeof userData);
+      return userData;
     } else {
       setCurrentUser(userData);
       history.push("/");
