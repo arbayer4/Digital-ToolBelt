@@ -35,12 +35,14 @@ function App() {
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
+    console.log(userData);
     setCurrentUser(userData);
     history.push("/");
   };
 
   const handleRegister = async (formData) => {
     const userData = await registerUser(formData);
+    console.log(userData);
     setCurrentUser(userData);
     history.push("/");
   };
