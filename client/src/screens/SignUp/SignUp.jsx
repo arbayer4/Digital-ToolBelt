@@ -10,7 +10,7 @@ function SignUp(props) {
   const [passwordConfirm, setPasswordConfirm] = useState("");
   const [message, setMessage] = useState("");
   const { username, email, password } = formData;
-  const { handleRegister } = props;
+  const { handleRegister, createUserError } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -26,10 +26,11 @@ function SignUp(props) {
         className="signup-container"
         onSubmit={(e) => {
           e.preventDefault();
-          const prom = handleRegister(formData);
-          prom.then((value) => {
-            setMessage(value);
-          });
+          handleRegister(formData);
+          // const prom = handleRegister(formData);
+          // prom.then((value) => {
+          //   setMessage(value);
+          // });
         }}
       >
         <h3>Register</h3>
@@ -71,7 +72,7 @@ function SignUp(props) {
           onChange={(e) => setPasswordConfirm(e.target.value)}
           required
         />
-        <div>{message}</div>
+        <div>{createUserError}</div>
         <button
           type="submit"
           disabled={passwordConfirm !== password || password.length === 0}
