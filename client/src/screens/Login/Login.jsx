@@ -23,7 +23,8 @@ function Login(props) {
         className="sign-in-form"
         onSubmit={(e) => {
           e.preventDefault();
-          handleLogin(formData);
+          const prom = handleLogin(formData);
+          console.log(prom);
         }}
       >
         <label htmlFor="sign-in-username">Username:</label>
