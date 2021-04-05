@@ -17,6 +17,7 @@ import Layout from "./components/shared/Layout/Layout";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [createUserError, setCreateUserError] = useState("");
   const history = useHistory();
 
   useEffect(() => {
@@ -50,7 +51,7 @@ function App() {
       setCurrentUser(userData);
       history.push("/");
     } catch (error) {
-      return error.response.data;
+      setCreateUserError(error.response.data);
     }
     // const userData = await registerUser(formData);
     // if (!userData.username) {
@@ -80,7 +81,10 @@ function App() {
               <Login handleLogin={handleLogin} />
             </Route>
             <Route path="/sign-up">
-              <SignUp handleRegister={handleRegister} />
+              <SignUp
+                handleRegister={handleRegister}
+                createUserError={createUserError}
+              />
             </Route>
             <Route path="/">
               {currentUser ? (
