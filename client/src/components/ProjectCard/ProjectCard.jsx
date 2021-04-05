@@ -4,8 +4,6 @@ import "./ProjectCard.css";
 
 function ProjectCard(props) {
   const { project, materials, hours } = props;
-  console.log(materials);
-  console.log(hours);
   const materialTotal = materials.reduce((acc, material) => {
     acc += Number(material.price) * material.quantity;
     return acc;
@@ -13,7 +11,6 @@ function ProjectCard(props) {
   const hourTotal = hours.reduce((acc, hour) => {
     return (acc += Number(hour.hours));
   }, 0);
-  console.log(materialTotal);
 
   return (
     <>

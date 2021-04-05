@@ -35,7 +35,7 @@ function App() {
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
-    if (!userData.username) {
+    if (!userData?.username) {
       return userData;
     } else {
       console.log(userData);

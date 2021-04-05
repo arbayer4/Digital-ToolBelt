@@ -34,6 +34,7 @@ function Login(props) {
           });
         }}
       >
+        <h3>Log In</h3>
         <label htmlFor="sign-in-username">Username:</label>
         <input
           id="sign-in-username"
