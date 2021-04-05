@@ -3,8 +3,9 @@
   box-sizing: border-box;
   flex-flow: row nowrap;
   height: 90px;
-  /* border-bottom: 5px solid #00a8e8; */
-  margin: 10px;
+  /* background-color: rgb(244, 187, 68); */
+  border-bottom: 5px solid rgb(244, 187, 68);
+  /* margin: 10px; */
 
   align-items: center;
   justify-content: space-between;
