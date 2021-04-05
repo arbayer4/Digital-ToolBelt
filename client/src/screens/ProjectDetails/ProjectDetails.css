@@ -1,5 +1,5 @@
 .details-container {
-  background-color: #007ea7;
+  /* background-color: #007ea7; */
   box-sizing: border-box;
   width: 90vw;
   border-radius: 5px;
@@ -11,7 +11,7 @@
   flex-flow: column nowrap;
   align-items: center;
 
-  color: #e9ecef;
+  color: #54392e;
 }
 .owner-details > div {
   margin: 5px;

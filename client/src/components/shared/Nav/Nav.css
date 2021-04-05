@@ -3,8 +3,9 @@
   box-sizing: border-box;
   flex-flow: row nowrap;
   height: 90px;
-  /* border-bottom: 5px solid #00a8e8; */
-  margin: 10px;
+  /* background-color: rgb(244, 187, 68); */
+  border-bottom: 5px solid rgb(244, 187, 68);
+  /* margin: 10px; */
 
   align-items: center;
   justify-content: space-between;
@@ -21,18 +22,16 @@
   font-family: "Shadows Into Light", cursive;
 }
 .nav-title:hover {
-  opacity: 0.9;
+  color: #54392e;
 }
 .right-links {
   text-decoration: none;
-  color: #003459;
+  color: #54392e;
   font-size: 25px;
+  padding: 5px;
 }
 .right-links:hover {
-  background-color: #003459;
-  border-radius: 5px;
-  color: white;
-  padding: 5px;
+  color: rgb(150, 112, 73);
 }
 @media only screen and (max-width: 768px) {
   .nav-title {
