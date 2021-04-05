@@ -7,7 +7,7 @@ export const loginUser = async (loginData) => {
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
     return resp.data.user;
   } catch (error) {
-    return error.response?.data;
+    return error.response.data;
   }
 };
 
@@ -19,7 +19,8 @@ export const registerUser = async (registerData) => {
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
     return resp.data.user;
   } catch (error) {
-    return error.response.data;
+    // return error.response.data;
+    throw error;
   }
 };
 
