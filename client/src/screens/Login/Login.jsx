@@ -7,6 +7,7 @@ function Login(props) {
     username: "",
     password: "",
   });
+  const [message, setMessage] = useState("");
   const { username, password } = formData;
   const { handleLogin } = props;
 
@@ -23,7 +24,14 @@ function Login(props) {
         className="sign-in-form"
         onSubmit={(e) => {
           e.preventDefault();
-          handleLogin(formData);
+          const prom = handleLogin(formData);
+          prom.then((value) => {
+            if (value?.errors === "unauthorized") {
+              setMessage("Incorrect Password");
+            } else {
+              setMessage("Username Not Found");
+            }
+          });
         }}
       >
         <label htmlFor="sign-in-username">Username:</label>
@@ -44,6 +52,7 @@ function Login(props) {
           value={password}
           onChange={handleChange}
         />
+        <div>{message}</div>
         <button type="submit">Login</button>
         <div>No account?</div>
         <Link to="sign-up">SignUp</Link>

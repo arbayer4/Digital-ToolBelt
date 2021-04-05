@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Burger from "./Burger";
 import "./Nav.css";
 function Nav(props) {
   const { user, handleLogout } = props;
@@ -27,7 +28,7 @@ function Nav(props) {
         DIGITAL TOOLBELT
       </Link>
       <div className="right">
-        {user ? authenticatedOptions : unauthenticatedOptions}
+        {user ? <Burger handleLogout={handleLogout} /> : unauthenticatedOptions}
       </div>
     </nav>
   );
