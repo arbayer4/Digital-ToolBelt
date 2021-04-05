@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 function LandingPage(props) {
   return (
     <div className="landing-container">
-      <Link to="/login">Login</Link>
       <h1>Digital ToolBelt</h1>
       <p>
         Digital Toolbelt is designed to be another tool in a contractors tool

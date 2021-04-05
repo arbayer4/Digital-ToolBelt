@@ -1,0 +1,52 @@
+.nav-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-flow: row nowrap;
+  height: 90px;
+  /* background-color: rgb(244, 187, 68); */
+  border-bottom: 5px solid rgb(244, 187, 68);
+  /* margin: 10px; */
+
+  align-items: center;
+  justify-content: space-between;
+  width: 95vw;
+}
+.nav-container a {
+  box-sizing: border-box;
+  margin: 20px;
+}
+.nav-title {
+  text-decoration: none;
+  font-size: 50px;
+  color: rgb(150, 112, 73);
+  font-family: "Shadows Into Light", cursive;
+}
+.nav-title:hover {
+  color: #54392e;
+}
+.right-links {
+  text-decoration: none;
+  color: #54392e;
+  font-size: 25px;
+  padding: 5px;
+}
+.right-links:hover {
+  color: rgb(150, 112, 73);
+}
+@media only screen and (max-width: 768px) {
+  .nav-title {
+    font-size: 40px;
+  }
+  .right-links {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-title {
+    font-size: 22px;
+  }
+  .right-links {
+    font-size: 15px;
+  }
+}

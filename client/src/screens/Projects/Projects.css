@@ -1,0 +1,25 @@
+.projects-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects-container > a {
+  text-decoration: none;
+}
+.projects-container > h1 {
+  color: #54392e;
+}
+.add-project-button {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 60px;
+  width: 90px;
+  height: 90px;
+  font-weight: bolder;
+  color: #54392e;
+  background-color: rgb(244, 187, 68);
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: -7px 7px 5px #6c757d;
+}

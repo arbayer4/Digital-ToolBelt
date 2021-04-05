@@ -1,0 +1,240 @@
+.details-container {
+  /* background-color: #007ea7; */
+  box-sizing: border-box;
+  width: 90vw;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding: 20px;
+}
+.owner-details {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  color: #54392e;
+}
+.owner-details > div {
+  margin: 5px;
+}
+.details-buttons > button {
+  margin: 20px;
+}
+.budget-time {
+  box-sizing: border-box;
+  margin: 40px 20px 20px 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.timesheet {
+  width: 30vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
+}
+.time-table {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.table-columns {
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: bold;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.table-columns,
+.time-row,
+.time-total {
+  width: 22vw;
+}
+.column-date,
+.date,
+.total {
+  width: 14vw;
+}
+.column-date {
+  border-right: 1px solid black;
+  padding-bottom: 5px;
+}
+.column-hours {
+  width: 8vw;
+  padding-bottom: 5px;
+}
+
+.time-row,
+.time-total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.add-hours {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 20vw;
+  justify-content: space-between;
+}
+.date-input {
+  width: 10vw;
+  margin-bottom: 5px;
+}
+.hours-input {
+  width: 7vw;
+  margin-bottom: 5px;
+}
+/* .time-total {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  justify-content: space-between;
+} */
+.add-time-form {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.date,
+.total {
+  border-right: 1px solid black;
+}
+.date,
+.hours {
+  padding: 7px 0px;
+}
+.hours {
+  width: 6vw;
+}
+.hours-total {
+  width: 8vw;
+}
+.total,
+.hours-total {
+  font-weight: bold;
+  padding-top: 7px;
+  text-align: center;
+}
+.time-total {
+  box-sizing: border-box;
+  border-top: 1px solid black;
+}
+input.hours {
+  text-align: center;
+}
+img.delete-time {
+  width: 2vw;
+  height: 2vw;
+  margin-top: 7px;
+  transition: transform 250ms;
+}
+img.delete-time:hover {
+  transform: translateX(3px);
+}
+.budget-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 20px;
+  width: 35vw;
+  height: 200px;
+  font-size: 2.5vw;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+
+.boxline {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.materials-table-container {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e9ecef;
+  /* border-radius: 5px; */
+  box-shadow: -7px 7px 5px #6c757d;
+}
+.materials-table .materials-table {
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.material-columns {
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom: 1px solid black;
+}
+.material-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.material-box {
+  width: 18vw;
+  border-right: 1px solid black;
+}
+.delete-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .budget-time {
+    flex-flow: column nowrap;
+  }
+  .timesheet {
+    width: 50vw;
+    margin: 20px;
+  }
+  .time-table {
+    width: 40vw;
+  }
+  .time-row,
+  .time-total,
+  .table-columns {
+    width: 40vw;
+  }
+  .date,
+  .column-date,
+  .total {
+    width: 20vw;
+  }
+  .hours-total,
+  .column-hours {
+    width: 20vw;
+  }
+  .hours {
+    width: 15vw;
+  }
+  img.delete-time {
+    width: 5vw;
+    height: auto;
+  }
+}

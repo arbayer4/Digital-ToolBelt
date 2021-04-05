@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "./Login.css";
 
 function Login(props) {
   const [formData, setFormData] = useState({
@@ -18,32 +19,34 @@ function Login(props) {
   };
   return (
     <div>
-      <Link to="sign-up">SignUp</Link>
       <form
+        className="sign-in-form"
         onSubmit={(e) => {
           e.preventDefault();
           handleLogin(formData);
         }}
       >
-        <label>
-          Username:
-          <input
-            type="text"
-            name="username"
-            value={username}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Password:
-          <input
-            type="text"
-            name="password"
-            value={password}
-            onChange={handleChange}
-          />
-        </label>
+        <label htmlFor="sign-in-username">Username:</label>
+        <input
+          id="sign-in-username"
+          type="text"
+          name="username"
+          placeholder="Username"
+          value={username}
+          onChange={handleChange}
+        />
+        <label htmlFor="sign-in-password">Password:</label>
+        <input
+          id="sign-in-password"
+          type="password"
+          name="password"
+          placeholder="password"
+          value={password}
+          onChange={handleChange}
+        />
         <button type="submit">Login</button>
+        <div>No account?</div>
+        <Link to="sign-up">SignUp</Link>
       </form>
     </div>
   );

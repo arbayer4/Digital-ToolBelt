@@ -1,0 +1,13 @@
+.add-project-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.add-project-form > input,
+.add-project-form > textarea {
+  width: 40vw;
+}
+.add-project-form > textarea {
+  resize: vertical;
+}

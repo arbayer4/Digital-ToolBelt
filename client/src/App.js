@@ -7,13 +7,16 @@ import {
   removeToken,
   verifyUser,
 } from "./services/auth";
-import LandingPage from "./screens/LandingPage";
-import Login from "./screens/Login";
-import SignUp from "./screens/SignUp";
+import LandingPage from "./screens/LandingPage/LandingPage";
+import Login from "./screens/Login/Login";
+import SignUp from "./screens/SignUp/SignUp";
 import ProjectsContainer from "./containers/ProjectsContainer";
+import Spinner from "./utils/spinner";
+import Layout from "./components/shared/Layout/Layout";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const history = useHistory();
 
   useEffect(() => {
@@ -23,6 +26,12 @@ function App() {
     };
     handleVerify();
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  });
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -44,24 +53,30 @@ function App() {
 
   return (
     <div className="App">
-      <Switch>
-        <Route path="/login">
-          <Login handleLogin={handleLogin} />
-        </Route>
-        <Route path="/sign-up">
-          <SignUp handleRegister={handleRegister} />
-        </Route>
-        <Route path="/">
-          {currentUser ? (
-            <ProjectsContainer
-              handleLogout={handleLogout}
-              currentUser={currentUser}
-            />
-          ) : (
-            <LandingPage />
-          )}
-        </Route>
-      </Switch>
+      {loading ? (
+        <Spinner />
+      ) : (
+        <Layout user={currentUser} handleLogout={handleLogout}>
+          <Switch>
+            <Route path="/login">
+              <Login handleLogin={handleLogin} />
+            </Route>
+            <Route path="/sign-up">
+              <SignUp handleRegister={handleRegister} />
+            </Route>
+            <Route path="/">
+              {currentUser ? (
+                <ProjectsContainer
+                  handleLogout={handleLogout}
+                  currentUser={currentUser}
+                />
+              ) : (
+                <LandingPage />
+              )}
+            </Route>
+          </Switch>
+        </Layout>
+      )}
     </div>
   );
 }
