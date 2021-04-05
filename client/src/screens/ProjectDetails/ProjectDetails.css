@@ -201,8 +201,13 @@ input[type="number"] {
   border-right: 1px solid black;
 }
 .delete-icon {
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
+  margin-top: 7px;
+  transition: transform 250ms;
+}
+.delete-icon:hover {
+  transform: translateX(3px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -232,9 +237,5 @@ input[type="number"] {
   }
   .hours {
     width: 15vw;
-  }
-  img.delete-time {
-    width: 5vw;
-    height: auto;
   }
 }
