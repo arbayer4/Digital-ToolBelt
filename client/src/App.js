@@ -31,7 +31,7 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 1000);
-  });
+  }, []);
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
@@ -45,15 +45,22 @@ function App() {
   };
 
   const handleRegister = async (formData) => {
-    const userData = await registerUser(formData);
-    if (!userData.username) {
-      console.log(userData);
-      return userData;
-    } else {
+    try {
+      const userData = await registerUser(formData);
       setCurrentUser(userData);
       history.push("/");
-      return false;
+    } catch (error) {
+      return error.response.data;
     }
+    // const userData = await registerUser(formData);
+    // if (!userData.username) {
+    //   console.log(userData);
+    //   return userData;
+    // } else {
+    //   setCurrentUser(userData);
+    //   history.push("/");
+    //   return false;
+    // }
   };
 
   const handleLogout = () => {
