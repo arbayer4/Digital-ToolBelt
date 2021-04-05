@@ -14,6 +14,7 @@
   color: #54392e;
   border-radius: 10px;
   margin-top: 20px;
+  box-shadow: -7px 7px 5px #6c757d;
 }
 .right {
   display: flex;
