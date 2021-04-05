@@ -82,22 +82,22 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time | 
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Rails Backend Setup |    H     |     3 hrs      |     0 hrs     |    TBD      |
-| Testing Backend     |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Deploying Backend   |    H     |     1 hrs      |     0 hrs     |     TBD     |
-| Miscelaneous Backend Updates/Changes |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Frontend CRUD Routes |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| Landing Page         |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Sign Up/Sign In      |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| Project Component    |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Projects Screen    |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| Projects Detail Screen    |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Add Project Screen    |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| Edit Project Screen    |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| CSS Flex and Grid |    H     |     10 hrs      |     0 hrs     |     TBD     |
-| Media Queries    |    H     |     3 hrs      |     0 hrs     |     TBD     |
-| Post MVP    |    H     |     2 hrs      |     0 hrs     |     TBD     |
-| TOTAL               |          |     44 hrs      |     0 hrs     |     TBD     |
+| Rails Backend Setup |    H     |     3 hrs      |     3 hrs     |    TBD      |
+| Testing Backend     |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Deploying Backend   |    H     |     1 hrs      |     .5 hrs     |     TBD     |
+| Miscelaneous Backend Updates/Changes |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Frontend CRUD Routes |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Landing Page         |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Sign Up/Sign In      |    H     |     2 hrs      |     3 hrs     |     TBD     |
+| Project Component    |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Projects Screen    |    H     |     2 hrs      |     3 hrs     |     TBD     |
+| Projects Detail Screen    |    H     |     3 hrs      |     4 hrs     |     TBD     |
+| Add Project Screen    |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Edit Project Screen    |    H     |     2 hrs      |     1 hrs     |     TBD     |
+| CSS Flex and Grid |    H     |     10 hrs      |     6 hrs     |     TBD     |
+| Media Queries    |    H     |     3 hrs      |     2 hrs     |     TBD     |
+| Post MVP    |    L     |     2 hrs      |     0 hrs     |     TBD     |
+| TOTAL               |          |     44 hrs      |     34.5 hrs     |     34.5    |
 
 <br>
 
