@@ -35,9 +35,13 @@ function App() {
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
-    console.log(userData);
-    setCurrentUser(userData);
-    history.push("/");
+    if (!userData.username) {
+      return userData;
+    } else {
+      console.log(userData);
+      setCurrentUser(userData);
+      history.push("/");
+    }
   };
 
   const handleRegister = async (formData) => {
