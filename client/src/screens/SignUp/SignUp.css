@@ -3,16 +3,30 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: flex-start;
+  background-color: rgb(244, 187, 68);
+  margin-top: 50px;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: -7px 7px 5px #6c757d;
+  color: #54392e;
 }
 
 .signup-container > label {
-  color: white;
+  color: rgb(244, 187, 68);
   font-size: 10px;
+}
+.signup-container > a {
+  text-decoration: none;
+  color: #54392e;
+}
+.signup-container > a:hover {
+  color: rgb(150, 112, 73);
+  text-decoration: underline;
 }
 .signup-container > input {
   border-radius: 3px;
   outline: none;
-  border: 3px solid #00a8e8;
+  border: 3px solid #54392e;
   /* width: 30vw; */
 }
 .signup-container > button {

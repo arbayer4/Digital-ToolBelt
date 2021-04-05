@@ -7,6 +7,7 @@ function SignUp(props) {
     email: "",
     password: "",
   });
+  const [passwordConfirm, setPasswordConfirm] = useState("");
   const { username, email, password } = formData;
   const { handleRegister } = props;
 
@@ -62,12 +63,20 @@ function SignUp(props) {
           placeholder="Confirm Password"
           type="password"
           name="password-confirm"
+          value={passwordConfirm}
+          onChange={(e) => setPasswordConfirm(e.target.value)}
           required
         />
-        <button type="submit">Submit</button>
+        {/* <p></p>x */}
+        <button
+          type="submit"
+          disabled={passwordConfirm !== password || password.length == +0}
+        >
+          SignUp
+        </button>
+        <div>Already have an account?</div>
+        <Link to="/login">Login</Link>
       </form>
-      <div>Already have an account?</div>
-      <Link to="/login">Login</Link>
     </div>
   );
 }
