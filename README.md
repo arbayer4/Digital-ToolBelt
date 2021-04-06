@@ -96,7 +96,7 @@ src
 | Edit Project Screen    |    H     |     2 hrs      |     1 hrs     |     1 hrs    |
 | CSS Flex and Grid |    H     |     10 hrs      |     6 hrs     |     6 hrs   |
 | Media Queries    |    H     |     3 hrs      |     2 hrs     |     2 hrs    |
-| Post MVP    |    L     |     2 hrs      |     2 hrs     |     2     |
+| Post MVP    |    L     |     2 hrs      |     2 hrs     |     2 hrs     |
 | TOTAL               |          |     44 hrs      |     36.5 hrs     |     36.5 hrs    |
 
 <br>
