@@ -53,7 +53,7 @@ function Login(props) {
           value={password}
           onChange={handleChange}
         />
-        <div>{message}</div>
+        <div className="sign-in-up-error">{message}</div>
         <button className="brown-button" type="submit">
           Login
         </button>

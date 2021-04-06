@@ -44,3 +44,6 @@
 .brown-button:hover {
   opacity: 0.8;
 }
+.brown-button:disabled {
+  opacity: 0.4;
+}
