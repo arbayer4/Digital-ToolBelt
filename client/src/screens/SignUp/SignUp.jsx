@@ -74,6 +74,7 @@ function SignUp(props) {
         />
         <div>{createUserError}</div>
         <button
+          className="brown-button"
           type="submit"
           disabled={passwordConfirm !== password || password.length === 0}
         >

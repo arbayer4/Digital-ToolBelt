@@ -30,7 +30,16 @@
   text-decoration: underline;
 }
 
-.sign-in-form > button {
+.brown-button {
   margin: 10px;
-  width: 50px;
+  background-color: rgb(150, 112, 73);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: -5px 5px 5px #6c757d;
+}
+.brown-button:hover {
+  opacity: 0.8;
 }

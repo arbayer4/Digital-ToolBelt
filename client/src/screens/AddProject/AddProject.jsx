@@ -100,7 +100,9 @@ function AddProject(props) {
           value={formData.description}
           onChange={handleChange}
         />
-        <button type="submit">Save Project</button>
+        <button className="brown-button" type="submit">
+          Save Project
+        </button>
       </form>
     </div>
   );
