@@ -39,7 +39,6 @@ function App() {
     if (!userData?.username) {
       return userData;
     } else {
-      console.log(userData);
       setCurrentUser(userData);
       history.push("/");
     }

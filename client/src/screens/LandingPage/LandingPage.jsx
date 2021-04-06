@@ -5,7 +5,7 @@ function LandingPage(props) {
   return (
     <div className="landing-container">
       <h1>Digital ToolBelt</h1>
-      <p>
+      <p className="landing-text">
         Digital Toolbelt is designed to be another tool in a contractors tool
         belt to help manage the business. The software will help keep track of
         materials and time for a project, and keep a running total so that it is
