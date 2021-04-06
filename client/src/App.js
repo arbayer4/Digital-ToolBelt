@@ -36,22 +36,14 @@ function App() {
 
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
-    if (!userData?.username) {
-      return userData;
-    } else {
-      setCurrentUser(userData);
-      history.push("/");
-    }
+    setCurrentUser(userData);
+    history.push("/");
   };
 
   const handleRegister = async (formData) => {
-    try {
-      const userData = await registerUser(formData);
-      setCurrentUser(userData);
-      history.push("/");
-    } catch (error) {
-      setCreateUserError(error.response.data);
-    }
+    const userData = await registerUser(formData);
+    setCurrentUser(userData);
+    history.push("/");
   };
 
   const handleLogout = () => {
@@ -71,10 +63,7 @@ function App() {
               <Login handleLogin={handleLogin} />
             </Route>
             <Route path="/sign-up">
-              <SignUp
-                handleRegister={handleRegister}
-                createUserError={createUserError}
-              />
+              <SignUp handleRegister={handleRegister} />
             </Route>
             <Route path="/">
               {currentUser ? (

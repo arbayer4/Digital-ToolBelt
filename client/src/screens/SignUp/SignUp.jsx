@@ -8,9 +8,8 @@ function SignUp(props) {
     password: "",
   });
   const [passwordConfirm, setPasswordConfirm] = useState("");
-  // const [message, setMessage] = useState("");
   const { username, email, password } = formData;
-  const { handleRegister, createUserError } = props;
+  const { handleRegister } = props;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -68,7 +67,6 @@ function SignUp(props) {
           onChange={(e) => setPasswordConfirm(e.target.value)}
           required
         />
-        <div className="sign-in-up-error">{createUserError}</div>
         <button
           className="brown-button"
           type="submit"
