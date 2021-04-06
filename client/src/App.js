@@ -52,15 +52,6 @@ function App() {
     } catch (error) {
       setCreateUserError(error.response.data);
     }
-    // const userData = await registerUser(formData);
-    // if (!userData.username) {
-    //   console.log(userData);
-    //   return userData;
-    // } else {
-    //   setCurrentUser(userData);
-    //   history.push("/");
-    //   return false;
-    // }
   };
 
   const handleLogout = () => {

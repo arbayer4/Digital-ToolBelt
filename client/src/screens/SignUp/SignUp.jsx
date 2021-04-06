@@ -27,10 +27,6 @@ function SignUp(props) {
         onSubmit={(e) => {
           e.preventDefault();
           handleRegister(formData);
-          // const prom = handleRegister(formData);
-          // prom.then((value) => {
-          //   setMessage(value);
-          // });
         }}
       >
         <h3>Register</h3>
@@ -72,7 +68,7 @@ function SignUp(props) {
           onChange={(e) => setPasswordConfirm(e.target.value)}
           required
         />
-        <div>{createUserError}</div>
+        <div className="sign-in-up-error">{createUserError}</div>
         <button
           className="brown-button"
           type="submit"

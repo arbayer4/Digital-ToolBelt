@@ -33,3 +33,7 @@
 .signup-container > button {
   margin: 10px;
 }
+
+.sign-in-up-error {
+  color: red;
+}
