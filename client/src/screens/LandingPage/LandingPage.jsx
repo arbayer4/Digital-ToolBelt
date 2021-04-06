@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./LandingPage.css";
 
 function LandingPage(props) {
   return (
@@ -13,8 +14,8 @@ function LandingPage(props) {
         help lead to more accurate bids in the future and a lead to a more
         profitable business.
       </p>
-      <Link to="sign-up">
-        <button>Get Started</button>
+      <Link to="/sign-up">
+        <button className="yellow-button">Get Started</button>
       </Link>
     </div>
   );

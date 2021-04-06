@@ -2,6 +2,23 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   color: #54392e;
+  border: 2px solid #54392e;
+  border-radius: 5px;
+  padding: 15px;
+}
+.landing-text {
+  width: 60vw;
+  text-align: justify;
+}
+.yellow-button {
+  background-color: rgb(244, 187, 68);
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: -5px 5px 5px #6c757d;
+}
+.yellow-button:hover {
+  opacity: 0.8;
 }

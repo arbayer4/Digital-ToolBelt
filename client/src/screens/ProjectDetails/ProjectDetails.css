@@ -210,8 +210,17 @@ input[type="number"] {
   transform: translateX(3px);
 }
 .add-material-form {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.materials-inputs {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.materials-inputs > input {
+  margin: 10px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 768px) {

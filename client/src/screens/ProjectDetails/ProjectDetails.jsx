@@ -97,11 +97,14 @@ function ProjectDetails(props) {
             <div>Phone: {project.client_phone}</div>
             <div className="description">{project.description}</div>
             <div className="details-buttons">
-              <button onClick={() => handleProjectDelete(project.id)}>
+              <button
+                className="yellow-button"
+                onClick={() => handleProjectDelete(project.id)}
+              >
                 Delete Project
               </button>
               <Link to={`/projects/${project.id}/edit`}>
-                <button>Edit Project</button>
+                <button className="yellow-button">Edit Project</button>
               </Link>
             </div>
           </div>
@@ -166,7 +169,9 @@ function ProjectDetails(props) {
                     onChange={handleTimeChange}
                   />
                 </div>
-                <button type="submit">Add Time</button>
+                <button className="yellow-button" type="submit">
+                  Add Time
+                </button>
               </form>
             </div>
             <div className="budget-container">
@@ -216,6 +221,15 @@ function ProjectDetails(props) {
                   />
                 </div>
               ))}
+              <div className="materials-total">
+                Total:{" "}
+                {Number(
+                  materials.reduce((acc, material) => {
+                    acc += Number(material.quantity * material.price);
+                    return acc;
+                  }, 0)
+                ).toFixed(2)}
+              </div>
             </div>
             <form
               className="add-material-form"
@@ -253,7 +267,9 @@ function ProjectDetails(props) {
                   onChange={handleMaterialChange}
                 />
               </div>
-              <button type="submit">Add Material Cost</button>
+              <button className="yellow-button" type="submit">
+                Add Material Cost
+              </button>
             </form>
           </div>
         </div>
