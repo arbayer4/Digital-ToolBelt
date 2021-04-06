@@ -3,11 +3,19 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  background-color: rgb(244, 187, 68);
+  margin-top: 50px;
+  padding: 40px;
+  color: #54392e;
 }
 .add-project-form > input,
 .add-project-form > textarea {
   width: 40vw;
+  padding: 5px;
 }
 .add-project-form > textarea {
   resize: vertical;
+}
+.add-project-form > label {
+  color: rgb(244, 187, 68);
 }

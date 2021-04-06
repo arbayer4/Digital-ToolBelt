@@ -54,7 +54,9 @@ function Login(props) {
           onChange={handleChange}
         />
         <div>{message}</div>
-        <button type="submit">Login</button>
+        <button className="brown-button" type="submit">
+          Login
+        </button>
         <div>No account?</div>
         <Link to="sign-up">SignUp</Link>
       </form>

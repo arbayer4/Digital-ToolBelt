@@ -81,6 +81,9 @@
   width: 20vw;
   justify-content: space-between;
 }
+.add-hours > input {
+  padding: 5px;
+}
 .date-input {
   width: 10vw;
   margin-bottom: 5px;
@@ -210,8 +213,21 @@ input[type="number"] {
   transform: translateX(3px);
 }
 .add-material-form {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.materials-inputs {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.materials-inputs > input {
+  margin: 10px;
+  padding: 5px;
+}
+.materials-total {
+  margin: 10px;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 768px) {
