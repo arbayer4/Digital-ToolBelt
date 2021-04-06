@@ -1,8 +1,10 @@
 .layout {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  padding-bottom: 150px;
 }
 .layout-children {
   display: flex;
