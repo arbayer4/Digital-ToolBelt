@@ -17,7 +17,6 @@ import Layout from "./components/shared/Layout/Layout";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [createUserError, setCreateUserError] = useState("");
   const history = useHistory();
 
   useEffect(() => {
