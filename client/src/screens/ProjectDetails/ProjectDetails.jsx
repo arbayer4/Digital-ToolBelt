@@ -222,7 +222,7 @@ function ProjectDetails(props) {
                 </div>
               ))}
               <div className="materials-total">
-                Total:{" "}
+                Materials Total:{" "}
                 {Number(
                   materials.reduce((acc, material) => {
                     acc += Number(material.quantity * material.price);

@@ -224,6 +224,7 @@ input[type="number"] {
 }
 .materials-total {
   margin: 10px;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 768px) {
