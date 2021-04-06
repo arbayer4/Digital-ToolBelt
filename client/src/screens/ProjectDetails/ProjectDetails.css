@@ -81,6 +81,9 @@
   width: 20vw;
   justify-content: space-between;
 }
+.add-hours > input {
+  padding: 5px;
+}
 .date-input {
   width: 10vw;
   margin-bottom: 5px;
