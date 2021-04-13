@@ -25,7 +25,11 @@ function SignUp(props) {
         className="signup-container"
         onSubmit={(e) => {
           e.preventDefault();
-          handleRegister(formData);
+          try {
+            handleRegister(formData);
+          } catch (error) {
+            console.log(error);
+          }
         }}
       >
         <h3>Register</h3>

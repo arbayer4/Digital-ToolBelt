@@ -40,9 +40,13 @@ function App() {
   };
 
   const handleRegister = async (formData) => {
-    const userData = await registerUser(formData);
-    setCurrentUser(userData);
-    history.push("/");
+    try {
+      const userData = await registerUser(formData);
+      setCurrentUser(userData);
+      history.push("/");
+    } catch (error) {
+      throw error;
+    }
   };
 
   const handleLogout = () => {

@@ -8,10 +8,14 @@ export const loginUser = async (loginData) => {
 };
 
 export const registerUser = async (registerData) => {
-  const resp = await api.post("/users/", { user: registerData });
-  localStorage.setItem("authToken", resp.data.token);
-  api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
-  return resp.data.user;
+  try {
+    const resp = await api.post("/users/", { user: registerData });
+    localStorage.setItem("authToken", resp.data.token);
+    api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
+    return resp.data.user;
+  } catch (error) {
+    throw error;
+  }
 };
 
 export const verifyUser = async () => {
